@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 h2 {
@@ -27,8 +29,16 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
 }
 
+.form-header {
+  display: flex;
+  flex-flow: column;
+  gap: 6px
+}
 .subtext {
   color: #a9a9a9;
   font-weight: unset;
@@ -37,6 +47,9 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
 }
 
 a {
@@ -80,6 +93,32 @@ input[type="submit"]:hover {
   background: #294bbb;
 }
 
-.form select {
+#city, #state {
   height: 30px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-flow: column;
+  gap: 6px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.form-group-horizontal-control {
+   display: flex;
+   gap: 30px
+}
+
+.form-group-horizontal-control .form-input-control {
+  flex-grow: 1;
+}
+
+.form-radio-control label, .form-checkbox-control label {
+  font-weight: normal;
 }
