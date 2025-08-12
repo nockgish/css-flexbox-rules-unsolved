@@ -131,7 +131,7 @@ section {
   gap: 20px;
 }
 
-.fa {
+.section-control .fa {
   padding: 11px;
 }
 
@@ -172,14 +172,13 @@ i.fa-th-list {
 
 .product-name {
   font-size: 28px;
-  padding: 20px 0;
   display: flex;
+  padding: 20px 0;
 }
 
 .product-description {
   line-height: 24px;
   color: #8d8ba5;
-  min-height: 120px;
 }
 
 .product-price {
@@ -247,6 +246,10 @@ i.fa-th-list {
   gap: 30px;
 }
 
+.grid .product-description {
+  min-height: 120px;
+}
+
 /* LINE VIEW STYLES */
 
 .lines.products {
@@ -256,9 +259,9 @@ i.fa-th-list {
 }
 
 .lines .product {
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .lines .product-image-wrapper {
@@ -272,11 +275,14 @@ i.fa-th-list {
 }
 
 .lines .product-info {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .lines .product-action {
     display: flex;
     gap: 30px;
+    padding: 20px 0;
 }
 
 /* LINES-ACTION VIEW */
@@ -291,7 +297,7 @@ i.fa-th-list {
 
 .lines-action .product {
   display: flex;
-  padding: 10px;
+  padding: 15px;
 }
 
 .lines-action .product-image-wrapper {
@@ -303,6 +309,10 @@ i.fa-th-list {
   display: flex;
 }
 
+.lines-action .product-name {
+  padding: 0 0;
+}
+
 .lines-action .product-info {
   display: flex;
   flex-direction: column;
@@ -312,7 +322,7 @@ i.fa-th-list {
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
-  /* padding-left: 30px; */
+  padding-left: 15px;
   min-width: 200px;
   display: flex;
   align-items: center;
